@@ -25,7 +25,7 @@ const App = () => {
           <Route exact path={["/", "/items"]}>
             <Items />
           </Route>
-          <Route exact path="/addItem" component={addItems} />
+          <ProtectedRoute exact path="/addItem" component={addItems} />
         </Switch>
       </div>
       <Footer />
