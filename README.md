@@ -1,29 +1,21 @@
-# Create React Express App
+# Easy User Authentication for React Apps
 
-## About This Boilerplate
+This repository hosts a React project that defines a Single-Page Application (SPA). You'll secure access to some of its routes using Auth0 User Authentication.
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
+## Get Started
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+Install the client project dependencies:
 
-## Starting the app locally
-
-Start by installing front and backend dependencies. While in this directory, run the following command:
-
-```
+```bash
 npm install
 ```
 
-This should install node modules within the server and the client folder.
+Run the client project:
 
-After both installations complete, run the following command in your terminal:
-
-```
+```bash
 npm start
 ```
 
-Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
+The application runs by on port `4040` to mitigate conflicting with other client applications you may be running.
 
-## Deployment (Heroku)
-
-To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
+Visit [`http://localhost:4040/`](http://localhost:4040/) to access the starter application.

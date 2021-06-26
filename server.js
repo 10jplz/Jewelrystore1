@@ -1,8 +1,8 @@
 const express = require("express");
 const path = require("path");
-const mongoose = require("mongoose")
-const routes = require("./routes")
-const PORT = process.env.PORT || 3001;
+const mongoose = require("mongoose");
+const routes = require("./routes");
+const PORT = process.env.PORT || 4040;
 const app = express();
 
 // Define middleware here
@@ -13,15 +13,15 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-app.use(routes)
+app.use(routes);
 
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/jewelrystore',
+  process.env.MONGODB_URI || "mongodb://localhost/jewelrystore",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
-    useFindAndModify: false
+    useFindAndModify: false,
   }
 );
 

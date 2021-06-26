@@ -5,7 +5,7 @@ import { Col, Row, Container } from "../components/Grid";
 import { Input, FormBtn, Select1, Upload1 } from "../components/Form";
 import LogoutButton from "../components/logout-button";
 
-function addItems() {
+function AddItems() {
   // Setting our component's initial state
   const [formObject, setFormObject] = useState({});
   // Load all books and store them with setBooks
@@ -82,9 +82,8 @@ function addItems() {
           </form>
         </Col>
       </Row>
-      <LogoutButton />
     </Container>
   );
 }
 
-export default addItems;
+export default AddItems;
