@@ -60,7 +60,6 @@ function Items() {
           )}
         </Col>
       </Row>
-      <LogoutButton />
     </Container>
   );
 }
