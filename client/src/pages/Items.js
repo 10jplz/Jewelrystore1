@@ -5,7 +5,6 @@ import API from "../utils/API";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
-import LogoutButton from "../components/logout-button";
 
 function Items() {
   // Setting our component's initial state
@@ -60,7 +59,6 @@ function Items() {
           )}
         </Col>
       </Row>
-      <LogoutButton />
     </Container>
   );
 }

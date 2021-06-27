@@ -3,7 +3,6 @@ import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import { Col, Row, Container } from "../components/Grid";
 import { Input, FormBtn, Select1, Upload1 } from "../components/Form";
-import LogoutButton from "../components/logout-button";
 
 function AddItems() {
   // Setting our component's initial state
@@ -82,7 +81,6 @@ function AddItems() {
           </form>
         </Col>
       </Row>
-      <LogoutButton />
     </Container>
   );
 }
